@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head></head>
+  <title>입력 양식 테스트</title>
+</head>
+<body>
+  <h1>HTML 폼 양식 작성하기</h1>
+  <form action = https://search.naver.com/search.naver method = "get" target = "_blank">
+    <fieldset>
+      <legend>Search</legend>
+      <input type = "text" name = "query">
+      <input type = "submit" value = "검색">
+    </fieldset>
+
+    <fieldset>
+      <legend>입력양식 1</legend>
+      학과 : <input type = "text" name = "major"><br>
+      <label for = "sno">학번 :</label>
+      <input type = "text" id = "sno"><br>
+      등록1 : <input type = "checkbox" name = "test1"><br>
+      <label>등록2 : <input type = "checkbox" name = "test2"></label>
+    </fieldset>
+
+    <fieldset>
+      <legend>input tag 확인</legend>
+      id(text) <input type = "text" size = "15" 
+      placeholder = "아이디를 입력하세요"><br>
+      password(password)<input type = "password" size = "10"><br>
+      age(text)<input type = "text" size = "1.5" maxlength = "3" value = "21"><br> 
+      검색(search)<input type = "search"><br><!--x버튼이 뜬다-->
+      홈페이지(url)<input type = "url" placeholder = "http://a.b.c"><br>
+      이메일(email)<input type = "email"placeholder = "test@b.c"><br>
+      전화번호(tel)<input type = "tel" placeholder = "010-1234-5678"><br>
+
+
+      다중선택<input type = "checkbox"> 영화
+      <input type = "checkbox" checked> 여행 <br>
+      라디오버튼 <input type = "radio" name = "season"> 봄
+      <input type = "radio" name = "season" checked> 여름
+      <input type = "radio" name = "season"> 가을
+      <input type = "radio" name = "season"> 겨울 <br>
+      <!--동일 이름을 가지면 여러개중에 한개만 선택 가능-->
+
+      숫자(number)<input type = "number" min = "10" max = "20"><br>
+      범위(range)<input type = "range" min = "1" max = "4" value = "2"><br>
+      <input type = "date">
+      <input type = "month">
+      <input type = "week">
+      <input type = "time">
+      <input type = "datetime-local"><br>
+      <input type = "submit" value = "제출">
+      <input type = "reset" value = "취소">
+      <input type = "file" >
+    </fieldset>
+
+  </form>
+  
+
+  
+</body>
+
+</html>
