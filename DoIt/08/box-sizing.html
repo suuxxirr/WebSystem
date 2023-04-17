@@ -10,20 +10,74 @@
 		.box1 {
 			width:200px;
 			height:100px;
-      padding:20px;
-      border:10px solid #ccc;
+      border: solid;
 		}
     .box2 {
       box-sizing: border-box;
 			width:200px;
 			height:100px;
-      padding:20px;
-      border:10px solid #00f;
+      border: dotted;
+    }
+    .box3 { 
+      box-sizing: border-box;
+			width:200px;
+			height:100px;
+      border: dashed;
+    }
+    .box4 { 
+      box-sizing: border-box;
+			width:200px;
+			height:100px;
+      border: double;
+    }
+    .box5 { 
+      box-sizing: border-box;
+			width:200px;
+			height:100px;
+      border: 10px groove;
+    }
+    .box6 { 
+      box-sizing: border-box;
+			width:200px;
+			height:100px;
+      border: 10px ridge;
+    }
+    .table1 { 
+      border-collapse: seperate;
+      border: inset;
+      width:200px;
+			height:100px;
+    }
+    .table2 { 
+      border-collapse: seperate;
+      border: outset;
+      width:200px;
+			height:100px;
     }
 	</style>
 </head>
 <body>
-  <div class="box1"></div>
-  <div class="box2"></div>
+  <div class="box1">border: solid;</div>
+  <div class="box2"> border: dotted;</div>
+  <div class="box3">border: dashed;</div>
+  <div class="box4">border: double;</div>
+  <div class="box5">border: 10px groove;</div>
+  <div class="box6">border: 10px ridge;</div>
+  <div class="table1">
+    <table>
+      <tr>
+        <td>border-collapse: seperate;<br>border: inset;</td>
+        <td></td>
+      </tr>
+    </table>
+  </div>
+  <div class="table2">
+    <table>
+      <tr>
+        <td>border-collapse: seperate;<br>border: outset;</td>
+        <td></td>
+      </tr>
+    </table>
+  </div>
 </body>
 </html>

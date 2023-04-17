@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>Document</title>
+  <style>
+    table {
+      caption-side: bottom;
+      border: 1px solid black; /* 표 테두리는 검은 색 실선 */
+      border-collapse: collapse;
+    }
+    td, th {
+      border: 1px dotted black; /* 셀 테두리는 검은색 점선 */
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <caption>선물용과 가정용 상품 구성</caption>
+    <tr>
+      <th>용도</th>
+      <th>중량</th>
+      <th>개수</th>
+      <th>가격</th>
+    </tr>
+    <tr>
+      <td rowspan = "2">선물용</td>>
+      <td>3kg</td>
+      <td>11</td>
+      <td>35000</td>
+    </tr>
+    <tr>
+      <td>5kg</td>
+      <td>18</td>
+      <td>52000</td>
+    </tr>
+    <tr>
+      <td rowspan = "2">가정용</td>
+      <td>3</td>
+      <td>11</td>
+      <td>30000</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>18</td>
+      <td>47000</td>
+    </tr>
+  </table>
+  
+</body>
+</html>
