@@ -1,0 +1,40 @@
+* {  
+  margin:0;  /* 브라우저 기본 마진 리셋 */
+  padding:0;  /* 브라우저 기본 패딩 리셋 */
+  box-sizing: border-box;  /* 테두리까지 포함해서 박스 모델 너비로 계산 */
+}
+#container {
+ display: grid;
+ grid-template-columns: 1fr 5fr 1fr;
+ grid-template-rows: 1fr 5fr 0.3fr;
+ width: 1400px; 
+ margin-left: auto;
+ margin-right: auto;
+}
+#boxheader {
+  width: 100%;
+  height: 140px;
+  grid-column: 1/4;
+  grid-row: 1;
+  background-color: aqua;
+}
+#laside {
+  grid-column: 1;
+  grid-row: 2;
+  background-color:#8f3b3b;
+}
+#contents {
+  grid-column: 2;
+  grid-row: 2;
+  background-color: rgb(163, 179, 173);
+}
+#raside {
+  grid-column: 3;
+  grid-row: 2;
+  background-color: #4e82af;
+}
+#footer {
+  grid-column: 1/4;
+  grid-row: 3;
+  background-color: rgb(153, 153, 13);
+}
