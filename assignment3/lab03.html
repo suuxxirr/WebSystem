@@ -3,22 +3,32 @@
 <head>
   <title>HTML + CSS 실습 5</title>
   <link rel="stylesheet" href="lab03.css">
+  <style>
+
+  </style>
 </head>
 <body>
   <div id="container">
     <header id="boxheader">
-      <h1> 큰 제목 작성하기</h1>
-      <p>소제목 작성하기</p>
-      <nav>
-        <ul>
-          <li>dd</li>
-          <li>ddd</li>
-        </ul>
-      </nav>
+      <h1> 맛있는 음식들</h1>
+      <p>맛있는 음식들을 소개하는 사이트</p>
+        <nav class="navi">
+          <ul>
+            <li><a href="#">한식</a></li>
+            <li><a href="#">중식</a></li>
+            <li><a href="#">일식</a></li>
+            <li><a href="#">양식</a></li>
+          </ul>
+        </nav>
     </header>
     <aside id="laside">
       <form>
-  
+        <label for="user-name">아이디</label><br>
+        <input type="text" id="user-name" size="15"><br>
+        <label for="pw">비밀번호</label>
+        <input type="password" id="pw" size="15">
+        <input type="button" value="로그인">
+        <input type="button" value="회원가입">
       </form>
   
     </aside>
@@ -34,10 +44,10 @@
       </article>
     </section>
     <aside id="raside">
-      <article>
-  
+      <article id="raside-article">
+
       </article>
-      <article>
+      <article id="raside-article">
   
       </article>
   
