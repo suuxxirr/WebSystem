@@ -34,24 +34,44 @@ header p {  /* header 태그 내 글자 */
 .navi ul {
   list-style: none;
 }
-.navi ul a {
+.navi ul  a {
   height: 37px;
 }
-.navi ul li { 
+.navi > ul li { 
   float: left;
   width: 202px;
   height: 37px;
  
 }
-.navi a:link, .navi a:visited {
+.navi > ul > li > ul > li{
+  width: 130px;
+  height: 20px;
+  margin-left: 40px;
+  background-color: #797667;
+  display: none;
+}
+.navi > ul > li > ul > li > a:link,  .navi > ul > li > ul > li > a:visited {
+  display: block;
+  color: white;
+  font-size: 15px;
+  text-decoration: none;
+  text-align: center;
+}
+.navi > ul > li > ul > li > a:hover {
+  color:#FFD232
+}
+.navi > ul > li > a:link, .navi > ul > li > a:visited {
   display:block;
   color: white;
   font-size: 22px;
   text-decoration: none;
   text-align: center;
 }
-.navi a:hover {
+.navi > ul > li > a:hover {
   background-color:#797667;
+}
+.navi > ul > li:hover > ul > li {
+  display: block;
 }
 #laside {
   grid-column: 1;
