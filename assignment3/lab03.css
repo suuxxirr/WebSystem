@@ -38,7 +38,7 @@ header p {  /* header 태그 내 글자 */
   height: 37px;
 }
 .navi ul li { 
-  float: right;
+  float: left;
   width: 202px;
   height: 37px;
  
@@ -52,7 +52,6 @@ header p {  /* header 태그 내 글자 */
 }
 .navi a:hover {
   background-color:#797667;
-
 }
 #laside {
   grid-column: 1;
@@ -80,6 +79,7 @@ form [type="button"] { /*왼쪽 aside 내부 form 버튼 */
   border: solid 2px #797667;
   border-radius: 15px;
   box-shadow: #797667 3px 3px;
+  padding: 15px 10px;
 }
 .box1 { /* section 내 article 1 */
   margin-top: 10px;
@@ -89,7 +89,16 @@ form [type="button"] { /*왼쪽 aside 내부 form 버튼 */
   margin-bottom: 10px;
 }
 .box3{ /* section 내 article 3*/
- margin-bottom: 15px
+ margin-bottom: 15px;
+}
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+h1 + img {
+  float: left;
+  margin-right: 7px;
 }
 #raside {
   grid-column: 3;
@@ -97,11 +106,15 @@ form [type="button"] { /*왼쪽 aside 내부 form 버튼 */
 }
 #raside-article { /*오른쪽 aside 태그 내 article */
   width: 95%;
-  height: 100px;
+  height: 185px;
   margin: 10px auto;
   border: solid #FFD232;
   border-radius: 7px;
   background-color: #FDF5DC;
+  padding: 5px;
+}
+h4 {
+  margin-bottom: 5px;
 }
 #footer {
   grid-column: 1/4;
@@ -109,4 +122,24 @@ form [type="button"] { /*왼쪽 aside 내부 form 버튼 */
   /*border: solid #797667 2px;*/
   background-color: #797667;
   margin-top: 5px;
+}
+#navi2 ul {
+  list-style: none;
+}
+#navi2 ul a {
+  margin-top: 12px;
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#navi2 ul li {
+  float: left;
+  width: 25%;
+}
+#navi2 a:link, #navi2 a:visited {
+  display:block;
+  color: white;
+  font-size: 15px;
+  text-decoration: none;
+  text-align: center;
 }
